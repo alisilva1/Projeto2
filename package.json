@@ -1,0 +1,18 @@
+{
+  "name": "modulo3",
+  "version": "1.0.0",
+  "description": "Testando sem o Y",
+  "main": "Server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Alisson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
