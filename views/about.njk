@@ -1,21 +1,21 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<title> Sobre</title>     
+<title> Sobre {{about.name}}</title>     
 {% endblock %}
 
 {% block content %}
     <div id="wrapper"> 
-        <img src="https://avatars3.githubusercontent.com/u/38330004?s=460&u=f5b8b45e98fbbdee21e5da2e023216cb42af8416&v=4" alt="Alisson Medeiros">
-        <h1> Alisson Medeiros </h1>
-        <h2> Consultor na empresa <a href= "https://www.mobileum.com/" target="_blank"> Mobileum </a></h2>
-        <p> Curioso em Design e atualmente analista de sistemas</p>
+        <img src="{{about.avatar_url}}" alt="{{about.name}}">
+        <h1>{{about.name}}</h1>
+        <h2> {{about.job}} </h2>
+        <p> {{about.description}} </p>
     </div>
 
     <div id="links-footer" class="links">
-        <a href="https://github.com/alisilva1" target="_blank">Github</a>
-        <a href="https://www.facebook.com/alisson.silva.77920" target="_blank">Facebook</a>
-        <a href="https://www.linkedin.com/in/alisson-medeiros-337450119/" target="_blank">Linkedin</a>
+        {% for link in about.link%}
+        <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
     </div>
 
 {% endblock %}
