@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <title> Portfolio - Alisson Medeiros</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+        <div id="wrapper"> 
+            <h1> Estudos </h1>
+        </div>
+
+        <section class="cards">
+
+            {% for item in itens %}
+            <div class="card" id = "{{item.id}}" >
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
+                </div>
+    
+                <div class="card_content">
+                    <p>{{item.title}}</p>
+                </div>
+                
+                <div class="card_info">
+                    <p>{{item.app}}</p>
+                    <card class="nome"><p>{{item.creator}}</p></card>
+                </div>
+            </div>
+            {% endfor %}
+
+        </section>
+        
+        <div id="links-footer" class="links">
+            <a href="https://github.com/alisilva1" target="_blank">Github</a>
+            <a href="https://www.facebook.com/alisson.silva.77920" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/alisson-medeiros-337450119/" target="_blank">Linkedin</a>
+        </div>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+            </div>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+
+{% endblock %}

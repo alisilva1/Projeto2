@@ -91,12 +91,13 @@ header{
     margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 
 }
 
 .card{
     background-color: #7159C1;
+    display: grid;
 }
 
 .card__image-container img{
@@ -105,7 +106,7 @@ header{
 
 .card_content,
 .card_info{
-    padding: 25px;
+    padding: 15px;
 
 }
 
@@ -114,8 +115,9 @@ header{
     grid-template-columns: 1fr 1fr;
     background-color: rgb(255, 255, 255);
     filter: brightness(90%);
-    padding: 5px 20px;
-    border-radius: 20px;
+    padding: 0px 0px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .nome{
