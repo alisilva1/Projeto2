@@ -17,8 +17,11 @@
 
             {% for item in itens %}
             <div class="card" id = "{{item.id}}" >
-                <div class="card__image-container">
+                <div class="card__image-container {{'featured-wrapper' if item.featured}}">
                     <img src="https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg" alt="Imagem de {{item.title}}">
+                    {% if item.featured %}
+                        <div class="featured">Novo</div>
+                    {% endif %}
                 </div>
     
                 <div class="card_content">

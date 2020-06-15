@@ -33,6 +33,7 @@ module.exports = [
         id: "T5T45bTESBY",
         title: "Estudo sobre BDD com cucumber",
         app: "Netbeans e Cucumber",
-        creator: "Alisson Medeiros"
+        creator: "Alisson Medeiros",
+        featured: true
     }
 ]

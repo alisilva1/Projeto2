@@ -10,7 +10,8 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views",{
      express:server,
-     autoescape: false
+     autoescape: false,
+     noCache: true
     })
 
 server.get("/", function(req,res){
@@ -35,3 +36,4 @@ server.get("/portfolio", function(req,res){
 server.listen(5000, function(){
     console.log("server is running")
 })
+
