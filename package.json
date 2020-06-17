@@ -1,6 +1,9 @@
 {
   "name": "modulo3",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "Testando sem o Y",
   "main": "server.js",
   "scripts": {
