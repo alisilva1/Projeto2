@@ -2,7 +2,7 @@
   "name": "modulo3",
   "version": "1.0.0",
   "description": "Testando sem o Y",
-  "main": "Server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "start:dev": "nodemon --watch"
