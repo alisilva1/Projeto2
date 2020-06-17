@@ -4,7 +4,7 @@
   "description": "Testando sem o Y",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./server",
     "start:dev": "nodemon --watch"
   },
   "author": "Alisson",
