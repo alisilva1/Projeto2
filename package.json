@@ -5,13 +5,13 @@
     "node": "12.x"
   },
   "description": "Testando sem o Y",
-  "main": "server.js",
+  "main": "app/server.js",
   "scripts": {
-    "start": "node ./server.js",
+    "start": "node app/server.js",
     "start:dev": "nodemon --watch"
   },
   "author": "Alisson",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "app-module-path": "^2.2.0",
     "express": "^4.17.1",
