@@ -3,6 +3,7 @@ const nunjucks= require('nunjucks')
 
 const server= express()
 //const videos = require('app/data')
+const videos = require('./data')
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
